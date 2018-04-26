@@ -30,8 +30,7 @@ echo "請輸入被除數、除數，得出商與餘數<br><br>";
     除以
     <input type = "text" name = "y" placeholder="請輸入除數" value="<?php echo $y; ?>">
     <input type="submit" value="=" />
-    <?php echo $result_div; ?>
-    餘
-    <?php echo $result_reminder; ?>
+    <?php echo $result_div;
+        if ($result_reminder !=0) echo " 餘 {$result_reminder}"; ?>
 
 </form>
